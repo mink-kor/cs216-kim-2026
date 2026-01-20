@@ -1,0 +1,32 @@
+# Planning_IPO_Test_Cases.py
+# January 19, 2026
+# Min Kim
+# Planning IPO
+
+# Input
+
+print("Enter number of steps")
+steps = int(input())
+print("Enter stride distance in inches")
+stride_inches = int(input())
+
+
+# Processing
+inches_Walked = steps * stride_inches
+
+# 1 mile = 63,360
+
+miles = stride_inches / 63,360
+
+
+
+# Output
+
+print(f"you walked {steps:,} steps, which is {miles:.} miles.)
+
+if > 0
+    print ( "you need more steps to reach 10,000")
+if < 0
+    print ( "you were over 10,000 steps)
+if = 0
+    print ( "you walked exactly 10,000 steps)
