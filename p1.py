@@ -22,13 +22,14 @@ miles = inches_walked / 63360
 
 # Output
 
-print(f"you walked {steps:,} steps, which is {miles:.2f} miles.")
+print(f"You walked {steps:,} steps which is {miles:.2f} miles")
 
 difference = steps - 10000
 
 if steps < 10000:
-    print (f"you were {abs(difference):,} steps under 10,000")
+    print (f"You need {abs(difference):,} more steps to reach 10,000")
+
 elif steps > 10000:
-    print (f"you were {difference:,} steps over 10,000 steps")
+    print (f"You were {difference:,} steps over 10,000")
 else:
-    print ( "you walked exactly 10,000 steps")
+    print ( "You walked exactly 10,000 steps")
