@@ -8,32 +8,38 @@
 # functions
 
 def get_steps():
-    return -1
+    print("Enter number of steps")
+    steps = int(input())
+    return steps
 
 def get_stride_inches():
-    return -1
+    print("Enter stride distance in inches")
+    stride_inches = int(input())
+    return stride_inches
 
 
 def calculate_miles(steps, stride_inches):
-    return -1
+    miles = (steps * stride_inches) / 63360
+    return miles
 
 def additional_steps_needed(steps):
-    return -1
+    diff = 10000 - steps
+    return diff
 
 
 def miles_output_line(steps, miles):
-    msg = "miles walked"
+    msg = f"You walked {steps:,} steps which is {miles:.2f} miles"
     return msg
 
 def steps_output_line( additional ):
-    msg = "steps needed"
+    if additional > 0:
+        msg = f"You need {additional:,} more steps to reach 10,000"
+    elif additional < 0:
+        msg = f"You were {abs(additional):,} steps over 10,000"
+    else:
+        msg = "You walked exactly 10,000 steps"
     return msg
 
-def calculate_miles
-def step_difference
-def additional_steps_needed
-def miles_output_line
-def steps_output_line
 
 # +------ do not modify this section ----------+
 def main():
