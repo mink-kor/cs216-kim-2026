@@ -111,25 +111,25 @@ print()
 # -------------------------------------------------
 # Test 7: calculate_miles
 # -------------------------------------------------
-print("Test 7: calculate_miles()")
-expected = "You were 2,500 steps over 10,000"
-actual = p2.steps_output_line(-2500)
+print("Test 7: calculate_miles(8000, 30)")
+expected = 3.79
+actual = p2.calculate_miles(8000, 30)
 
-if actual == expected:
-    print("PASS: Test 5")
+if abs(actual - expected) < 0.01:
+    print("PASS: Test 7")
 else:
-    print("FAIL: Test 5")
+    print("FAIL: Test 7")
     print("  expected:", expected)
     print("  actual:  ", actual)
 
 print()
 
 # -------------------------------------------------
-# Test 8: step_difference
+# Test 8: additional_steps_needed
 # -------------------------------------------------
-print("Test 8: step_difference()")
-expected = "You were 2,500 steps over 10,000"
-actual = p2.steps_output_line(-2500)
+print("Test 8: additional_steps_needed(8000)")
+expected = 2000
+actual = p2.additional_steps_needed(8000)
 
 if actual == expected:
     print("PASS: Test 8")
@@ -141,11 +141,11 @@ else:
 print()
 
 # -------------------------------------------------
-# Test 9: additional_steps_needed
+# Test 9: miles_output_Line
 # -------------------------------------------------
-print("Test 9: additional_steps_needed()")
-expected = "You were 2,500 steps over 10,000"
-actual = p2.steps_output_line(-2500)
+print("Test 9: miles_output_line(8000, 3.79)")
+expected = "You walked 8,000 steps which is 3.79 miles"
+actual = p2.miles_output_line(8000, 3.79)
 
 if actual == expected:
     print("PASS: Test 9")
@@ -157,11 +157,11 @@ else:
 print()
 
 # -------------------------------------------------
-# Test 10: miles_output_line
+# Test 10: steps_output_Line (under)
 # -------------------------------------------------
-print("Test 10: miles_output_line()")
-expected = "You were 2,500 steps over 10,000"
-actual = p2.steps_output_line(-2500)
+print("Test 10: steps_output_line(2000)")
+expected = "You need 2,000 more steps to reach 10,000"
+actual = p2.steps_output_line(2000)
 
 if actual == expected:
     print("PASS: Test 10")
@@ -173,11 +173,11 @@ else:
 print()
 
 # -------------------------------------------------
-# Test 11: steps_output_line
+# Test 11: steps_output_Line (over)
 # -------------------------------------------------
-print("Test 11: steps_output_line(2500)")
-expected = "You were 2,500 steps over 10,000"
-actual = p2.steps_output_line(-2500)
+print("Test 11: steps_output_line(-1500)")
+expected = "You were 1,500 steps over 10,000"
+actual = p2.steps_output_line(-1500)
 
 if actual == expected:
     print("PASS: Test 11")
@@ -189,3 +189,4 @@ else:
 print()
 print("=== End of Instructor Tests ===")
 print()
+
