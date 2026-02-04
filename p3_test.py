@@ -366,4 +366,38 @@ else:
     
 # *** add test cases for downChute( N ) here ***
 
+# --------------------------------------------
+# --- additional_test_cases( N )
+# --------------------------------------------
 
+header("Additional( N )")
+
+if downChute(47) == 26:
+    print("Passed: downChute(47) returns 26")
+else:
+    print("Failed: downChute(47) should return 26")
+    
+if downChute(56) == 53:
+    print("Passed: downChute(56) returns 53")
+else:
+    print("Failed: downChute(56) should return 53")
+
+if downChute(64) == 60:
+    print("Passed: downChute(64) returns 60")
+else:
+    print("Failed: downChute(64) should return 60")
+
+if downChute(87) == 24:
+    print("Passed: downChute(87) returns 24")
+else:
+    print("Failed: downChute(87) should return 24")
+
+if downChute(93) == 73:
+    print("Passed: downChute(93) returns 73")
+else:
+    print("Failed: downChute(93) should return 73")
+
+if downChute(95) == 75:
+    print("Passed: downChute(95) returns 75")
+else:
+    print("Failed: downChute(95) should return 75")
