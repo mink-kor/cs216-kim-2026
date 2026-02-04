@@ -32,7 +32,6 @@ def gameWon( N ):
 def isLadder( N ):
     """ use individual if approach (ie. no else or elif) to return True if N is bottom ladder position """
     result = False
-    return result
     
     if N == 1:
         result = True
@@ -52,6 +51,7 @@ def isLadder( N ):
         result = True
     if N == 71:
         result = True
+    return result
     
 
 
@@ -82,8 +82,7 @@ def isChute( N ):
   
 def upLadder( N ):
     """ use nested elif approach to return top of ladder position from bottom position N """
-    result = -1
-    
+    result = N    
     if N == 1:
         result = 33
     elif N == 4:
@@ -102,32 +101,31 @@ def upLadder( N ):
         result = 100
     elif N == 71:
         result = 91
-    else:
-        return N
+    return result
     
 def downChute( N ):
     """ use nested elif approch to return bottom of chute position from top position N """
-    result = -1
+    result = N
     
     if N == 16:
         result = 6
-    if N == 49:
+    elif N == 49:
         result = 11
-    if N == 62:
+    elif N == 62:
         result = 19
-    if N == 64:
+    elif N == 64:
         result = 60
-    if N == 56:
+    elif N == 56:
         result = 53
-    if N == 87:
+    elif N == 87:
         result = 24
-    if N == 93:
+    elif N == 93:
         result = 73
-    if N == 98:
+    elif N == 98:
         result = 78
-    if N == 47:
+    elif N == 47:
         result = 26
-    if N == 95:
+    elif N == 95:
         result = 75
     return result
 
